@@ -82,6 +82,7 @@ function selectedProjects() {
   return expanded || filter !== 'All' ? projects : (featured.length ? featured : projects.slice(0,6));
 }
 function render() {
+  grid.querySelectorAll('.project').forEach(el => revealObserver?.unobserve(el));
   grid.replaceChildren();
   const visible = selectedProjects().filter(p => filter === 'All' || p.category === filter);
   for (const p of visible) {
@@ -94,6 +95,7 @@ function render() {
     meta.append(text('h3',p.title),text('span',p.category,'category'));
     button.append(media,meta,text('p',p.short,'project-caption')); grid.append(button);
   }
+  observeMotion(grid.querySelectorAll('.project'));
   const remaining = projects.length - selectedProjects().length;
   more.hidden = expanded || filter !== 'All' || remaining <= 0;
   document.getElementById('more-count').textContent = '+' + remaining;
@@ -145,9 +147,50 @@ async function loadContent() {
     if (responses.some(response=>!response.ok)) throw new Error('Content unavailable');
     const [site, portfolio] = await Promise.all(responses.map(response=>response.json()));
     settings = site; projects = portfolio.projects.map((p,id)=>({...p,id})).filter(p=>p.published !== false);
-    applySettings(site); render();
+    applySettings(site); render(); startMotion();
   } catch {
     grid.replaceChildren(text('p','Projects could not load. Please refresh the page.','content-status'));
   }
 }
+// Motion enhances visible content; without JavaScript or with reduced motion it stays readable.
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+let revealObserver, heroObserver;
+function revealElement(el) {
+  el.classList.add('is-visible');
+  revealObserver?.unobserve(el);
+}
+function observeMotion(elements) {
+  if (!revealObserver || motionPreference.matches) return;
+  [...elements].forEach((el, index) => {
+    el.style.setProperty('--reveal-delay', Math.min(index % 2, 1) * 80 + 'ms');
+    el.classList.add('motion-reveal');
+    revealObserver.observe(el);
+  });
+}
+function startMotion() {
+  if (motionPreference.matches || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('motion-ready', 'hero-in-view');
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) revealElement(entry.target); });
+  }, {threshold: 0.08, rootMargin: '0px 0px -24px 0px'});
+  observeMotion(document.querySelectorAll('.section-heading, .filters, .project, .portrait, .about-copy, .capability-group, footer > .eyebrow, .contact-title, .contact-grid, .social-links'));
+  heroObserver = new IntersectionObserver(entries => {
+    document.documentElement.classList.toggle('hero-in-view', entries[0].isIntersecting);
+  });
+  heroObserver.observe(document.querySelector('.hero'));
+}
+motionPreference.addEventListener('change', () => {
+  revealObserver?.disconnect(); heroObserver?.disconnect();
+  document.documentElement.classList.remove('motion-ready', 'hero-in-view');
+  document.querySelectorAll('.motion-reveal').forEach(el => el.classList.remove('motion-reveal', 'is-visible'));
+  revealObserver = null; heroObserver = null;
+  if (settings) startMotion();
+});
+document.addEventListener('focusin', e => {
+  const target = e.target.closest('.motion-reveal');
+  if (target) revealElement(target);
+});
+document.addEventListener('visibilitychange', () => {
+  document.documentElement.classList.toggle('motion-paused', document.hidden);
+});
 loadContent();
