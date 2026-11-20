@@ -1,5 +1,5 @@
 {
-  "brand": "It's me Reza",
+  "brand": "It's me Reza ",
   "seo": {
     "title": "Reza Romadoni — Design with character.",
     "description": "Senior Graphic Designer with 8+ years of experience in brand identity, digital campaigns, visual systems, videography and motion."
@@ -14,17 +14,17 @@
     "file": "/assets/Reza-Romadoni-CV.pdf"
   },
   "hero": {
-    "eyebrow": "INDEPENDENT MIND. DISTINCT VISUALS.",
-    "edition": "PORTFOLIO — 2026",
-    "line1": "A clear idea.",
-    "line2": "A distinct",
-    "accent": "look.",
-    "description": "I’m Reza Romadoni a Senior Graphic Designer with 8+ years of experience in brand identity, digital campaigns, and visual systems, delivering consistent visual solutions for startups, agencies, and corporate brands.",
-    "button": "Explore my work",
-    "photo": "/assets/reza-fly-1k.webp",
-    "photoAlt": "Reza Romadoni surrounded by his creative tools",
+    "footerRight": "SCROLL TO DISCOVER",
     "footerLeft": "CAMPAIGN / SOCIAL MEDIA / VIDEOGRAPHY & MOTION",
-    "footerRight": "SCROLL TO DISCOVER"
+    "eyebrow": "INDEPENDENT MIND. DISTINCT VISUALS.",
+    "accent": "look.",
+    "photo": "/assets/reza-fly-1k.webp",
+    "button": "Explore my work",
+    "photoAlt": "Reza Romadoni surrounded by his creative tools",
+    "description": "I’m Reza Romadoni a Senior Graphic Designer with 8+ years of experience in brand identity, digital campaigns, and visual systems, delivering consistent visual solutions for startups, agencies, and corporate brands.",
+    "line1": "A clear idea.",
+    "edition": "PORTFOLIO — 2026",
+    "line2": "A distinct"
   },
   "work": {
     "eyebrow": "A SELECTION OF PROJECTS",
@@ -47,17 +47,17 @@
   },
   "labels": {
     "all": "All",
-    "more": "More projects",
-    "viewProject": "View project",
-    "close": "Close",
-    "openImage": "Open full-size image",
-    "tools": "Design tools",
-    "core": "Core skills",
-    "soft": "Soft skills",
     "ai": "AI tools",
-    "languages": "Languages",
+    "soft": "Soft skills",
+    "admin": "Admin",
+    "openImage": "Open full-size image",
     "backToTop": "Back to top",
-    "admin": "Admin"
+    "viewProject": "View project",
+    "more": "More projects",
+    "close": "Close",
+    "languages": "Languages",
+    "tools": "Design tools",
+    "core": "Core skills"
   },
   "designTools": [
     {
@@ -166,14 +166,7 @@
     }
   ],
   "contact": {
-    "eyebrow": "GOOD WORK STARTS WITH A CONVERSATION.",
-    "line1": "Let's",
-    "accent": "connect.",
-    "emailLabel": "Email",
-    "email": "rezaromadoni@gmail.com",
     "whatsappLabel": "WhatsApp",
-    "whatsappDisplay": "0812-9472-2370",
-    "whatsappNumber": "6281294722370",
     "socials": [
       {
         "icon": "instagram",
@@ -194,6 +187,13 @@
         "url": "https://www.linkedin.com/in/rezaromadoni97/"
       }
     ],
-    "copyright": "© 2026 REZA ROMADONI"
+    "copyright": "© 2026 REZA ROMADONI",
+    "eyebrow": "GOOD WORK STARTS WITH A CONVERSATION.",
+    "accent": "connect.",
+    "whatsappDisplay": "0812-9472-2370",
+    "emailLabel": "Email",
+    "whatsappNumber": "6281294722370",
+    "email": "rezaromadoni@gmail.com",
+    "line1": "Let's"
   }
 }
