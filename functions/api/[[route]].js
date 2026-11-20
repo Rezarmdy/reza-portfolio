@@ -78,7 +78,7 @@ export async function onRequest(context) {
   let stage='GitHub token exchange';
   try{
     const exchange=await fetch('https://github.com/login/oauth/access_token',{
-      method:'POST',redirect:'error',headers:{Accept:'application/json','Content-Type':'application/json','User-Agent':'Reza-Portfolio-Admin'},
+      method:'POST',redirect:'manual',headers:{Accept:'application/json','Content-Type':'application/json','User-Agent':'Reza-Portfolio-Admin'},
       body:JSON.stringify({client_id:env.GITHUB_CLIENT_ID,client_secret:env.GITHUB_CLIENT_SECRET,code,redirect_uri:SITE+'/api/callback',code_verifier:session.verifier,repository_id:REPOSITORY_ID})
     });
     if(!exchange.ok)return html('GitHub could not complete the sign-in. Please try again.',502);
@@ -86,13 +86,13 @@ export async function onRequest(context) {
     stage='GitHub identity check';
     if(typeof result.access_token!=='string'||!result.access_token.startsWith('ghu_'))return html('The website editor requires its dedicated GitHub App connection.',403);
     const headers={Accept:'application/vnd.github+json',Authorization:'Bearer '+result.access_token,'User-Agent':'Reza-Portfolio-Admin','X-GitHub-Api-Version':'2022-11-28'};
-    const identity=await fetch('https://api.github.com/user',{headers,redirect:'error'});
+    const identity=await fetch('https://api.github.com/user',{headers,redirect:'manual'});
     if(!identity.ok)return html('Your GitHub identity could not be verified.',403);
     const user=await identity.json();
     const allowed=(env.ALLOWED_GITHUB_USERS||'Rezarmdy').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);
     if(!allowed.includes(String(user.login).toLowerCase()))return html('This GitHub account is not authorised to edit this website.',403);
     stage='GitHub repository check';
-    const repo=await fetch('https://api.github.com/repos/'+REPOSITORY,{headers,redirect:'error'});
+    const repo=await fetch('https://api.github.com/repos/'+REPOSITORY,{headers,redirect:'manual'});
     if(!repo.ok)return html('Install the website editor GitHub App on the portfolio repository, then sign in again.',403);
     const access=await repo.json();
     if(String(access.id)!==REPOSITORY_ID||!access.permissions?.push)return html('This account does not have permission to publish portfolio changes.',403);
