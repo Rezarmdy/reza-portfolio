@@ -1,0 +1,605 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "Rezarmdy/reza-portfolio",
+    "branch": "main",
+    "base_url": "https://rezaromadoni.pages.dev",
+    "auth_endpoint": "api/auth"
+  },
+  "site_url": "https://rezaromadoni.pages.dev",
+  "display_url": "https://rezaromadoni.pages.dev",
+  "media_folder": "assets/uploads",
+  "public_folder": "/assets/uploads",
+  "show_preview_links": true,
+  "logo_url": "/assets/icons/cms-mark.svg",
+  "locale": "en",
+  "collections": [
+    {
+      "name": "website",
+      "label": "Website content",
+      "files": [
+        {
+          "name": "settings",
+          "label": "Website settings",
+          "file": "data/site.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "brand",
+              "label": "Top-left name",
+              "widget": "string"
+            },
+            {
+              "name": "seo",
+              "label": "Search & browser title",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Browser title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Search description",
+                  "widget": "text"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "navigation",
+              "label": "Navigation",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "work",
+                  "label": "Work link",
+                  "widget": "string"
+                },
+                {
+                  "name": "about",
+                  "label": "About link",
+                  "widget": "string"
+                },
+                {
+                  "name": "contact",
+                  "label": "Contact link",
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "cv",
+              "label": "CV download",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Button text",
+                  "widget": "string"
+                },
+                {
+                  "name": "file",
+                  "label": "CV PDF",
+                  "widget": "file",
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  },
+                  "hint": "Upload a PDF. Publishing updates the download link on your website."
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "hero",
+              "label": "Hero section",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Small heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "edition",
+                  "label": "Edition",
+                  "widget": "string"
+                },
+                {
+                  "name": "line1",
+                  "label": "Headline, first line",
+                  "widget": "string"
+                },
+                {
+                  "name": "line2",
+                  "label": "Headline, second line",
+                  "widget": "string"
+                },
+                {
+                  "name": "accent",
+                  "label": "Headline, italic text",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Introduction",
+                  "widget": "text"
+                },
+                {
+                  "name": "button",
+                  "label": "Button text",
+                  "widget": "string"
+                },
+                {
+                  "name": "photo",
+                  "label": "Hero photograph",
+                  "widget": "image",
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  },
+                  "choose_url": true
+                },
+                {
+                  "name": "photoAlt",
+                  "label": "Photo description",
+                  "widget": "string"
+                },
+                {
+                  "name": "footerLeft",
+                  "label": "Bottom-left caption",
+                  "widget": "string"
+                },
+                {
+                  "name": "footerRight",
+                  "label": "Bottom-right caption",
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "work",
+              "label": "Portfolio section",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Small heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "line1",
+                  "label": "Heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "accent",
+                  "label": "Italic heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Section introduction",
+                  "widget": "text"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "about",
+              "label": "About section",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Small heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "line1",
+                  "label": "Heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "accent",
+                  "label": "Italic heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "About paragraphs",
+                  "widget": "list",
+                  "allow_add": true
+                },
+                {
+                  "name": "photo",
+                  "label": "Profile photograph",
+                  "widget": "image",
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  },
+                  "choose_url": true
+                },
+                {
+                  "name": "photoAlt",
+                  "label": "Photo description",
+                  "widget": "string"
+                },
+                {
+                  "name": "photoCaption",
+                  "label": "Photo caption",
+                  "widget": "string"
+                },
+                {
+                  "name": "experienceLinkLabel",
+                  "label": "Experience link text",
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "labels",
+              "label": "Section names & button text",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "all",
+                  "label": "All projects",
+                  "widget": "string"
+                },
+                {
+                  "name": "more",
+                  "label": "More projects",
+                  "widget": "string"
+                },
+                {
+                  "name": "viewProject",
+                  "label": "View project",
+                  "widget": "string"
+                },
+                {
+                  "name": "close",
+                  "label": "Close project",
+                  "widget": "string"
+                },
+                {
+                  "name": "openImage",
+                  "label": "Open image",
+                  "widget": "string"
+                },
+                {
+                  "name": "tools",
+                  "label": "Design tools",
+                  "widget": "string"
+                },
+                {
+                  "name": "core",
+                  "label": "Core skills",
+                  "widget": "string"
+                },
+                {
+                  "name": "soft",
+                  "label": "Soft skills",
+                  "widget": "string"
+                },
+                {
+                  "name": "ai",
+                  "label": "AI tools",
+                  "widget": "string"
+                },
+                {
+                  "name": "languages",
+                  "label": "Languages",
+                  "widget": "string"
+                },
+                {
+                  "name": "backToTop",
+                  "label": "Back to top",
+                  "widget": "string"
+                },
+                {
+                  "name": "admin",
+                  "label": "Admin link",
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "designTools",
+              "label": "Design tools",
+              "widget": "list",
+              "summary": "{{fields.name}}",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Application name",
+                  "widget": "string"
+                },
+                {
+                  "name": "logo",
+                  "label": "Application logo",
+                  "widget": "image",
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  },
+                  "choose_url": true
+                }
+              ]
+            },
+            {
+              "name": "coreSkills",
+              "label": "Core skills",
+              "widget": "list",
+              "allow_add": true
+            },
+            {
+              "name": "softSkills",
+              "label": "Soft skills",
+              "widget": "list",
+              "allow_add": true
+            },
+            {
+              "name": "aiIntro",
+              "label": "AI tools introduction",
+              "widget": "text"
+            },
+            {
+              "name": "aiGroups",
+              "label": "AI tools",
+              "widget": "list",
+              "summary": "{{fields.title}}",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "What you use them for",
+                  "widget": "string"
+                },
+                {
+                  "name": "tags",
+                  "label": "Tools",
+                  "widget": "list",
+                  "allow_add": true
+                }
+              ]
+            },
+            {
+              "name": "languages",
+              "label": "Languages",
+              "widget": "list",
+              "summary": "{{fields.name}} — {{fields.level}}",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Language",
+                  "widget": "string"
+                },
+                {
+                  "name": "level",
+                  "label": "Proficiency",
+                  "widget": "select",
+                  "options": [
+                    "Beginner",
+                    "Working",
+                    "Professional",
+                    "Native"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "contact",
+              "label": "Contact & social media",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Small heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "line1",
+                  "label": "Heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "accent",
+                  "label": "Italic heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "emailLabel",
+                  "label": "Email label",
+                  "widget": "string"
+                },
+                {
+                  "name": "email",
+                  "label": "Email address",
+                  "widget": "string"
+                },
+                {
+                  "name": "whatsappLabel",
+                  "label": "WhatsApp label",
+                  "widget": "string"
+                },
+                {
+                  "name": "whatsappDisplay",
+                  "label": "Phone number as displayed",
+                  "widget": "string"
+                },
+                {
+                  "name": "whatsappNumber",
+                  "label": "WhatsApp international number",
+                  "widget": "string",
+                  "hint": "Use country code, without spaces or +. Example: 6281294722370."
+                },
+                {
+                  "name": "socials",
+                  "label": "Social profiles",
+                  "widget": "list",
+                  "summary": "{{fields.label}}",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "icon",
+                      "label": "Icon",
+                      "widget": "select",
+                      "options": [
+                        "instagram",
+                        "tiktok",
+                        "linkedin",
+                        "email",
+                        "whatsapp"
+                      ]
+                    },
+                    {
+                      "name": "label",
+                      "label": "Platform name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "handle",
+                      "label": "Display name or handle",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Profile link",
+                      "widget": "string",
+                      "pattern": [
+                        "^https://.+",
+                        "Use a full https:// profile link."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "copyright",
+                  "label": "Footer copyright",
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            }
+          ]
+        },
+        {
+          "name": "portfolio",
+          "label": "Portfolio projects",
+          "file": "data/projects.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "projects",
+              "label": "Projects",
+              "widget": "list",
+              "collapsed": true,
+              "summary": "{{fields.title}}",
+              "fields": [
+                {
+                  "name": "published",
+                  "label": "Visible on website",
+                  "widget": "boolean",
+                  "default": true
+                },
+                {
+                  "name": "featured",
+                  "label": "Show in selected work",
+                  "widget": "boolean",
+                  "default": false
+                },
+                {
+                  "name": "title",
+                  "label": "Project title",
+                  "widget": "string"
+                },
+                {
+                  "name": "category",
+                  "label": "Category",
+                  "widget": "select",
+                  "options": [
+                    "Campaign",
+                    "Social Media",
+                    "Videography & Motion"
+                  ]
+                },
+                {
+                  "name": "brand",
+                  "label": "Brand / credit line",
+                  "widget": "string"
+                },
+                {
+                  "name": "short",
+                  "label": "Short description",
+                  "widget": "text"
+                },
+                {
+                  "name": "role",
+                  "label": "Your contribution",
+                  "widget": "text"
+                },
+                {
+                  "name": "cover",
+                  "label": "Cover image",
+                  "widget": "image",
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  },
+                  "choose_url": true
+                },
+                {
+                  "name": "gallery",
+                  "label": "Full project gallery",
+                  "widget": "list",
+                  "collapsed": true,
+                  "summary": "{{fields.alt}}",
+                  "hint": "Upload complete images in their original proportions. Reorder them by dragging. They will never be cropped in the gallery.",
+                  "fields": [
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "widget": "image",
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      },
+                      "choose_url": true
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Image description",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "caption",
+                      "label": "Caption",
+                      "widget": "text",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

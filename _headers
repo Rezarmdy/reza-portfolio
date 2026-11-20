@@ -1,0 +1,10 @@
+/data/*
+  Cache-Control: no-cache
+/admin/*
+  Cache-Control: no-cache
+  X-Robots-Tag: noindex, nofollow
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+/api/*
+  Cache-Control: no-store
+  Referrer-Policy: no-referrer

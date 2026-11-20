@@ -1,0 +1,199 @@
+{
+  "brand": "It's me Reza",
+  "seo": {
+    "title": "Reza Romadoni — Design with character.",
+    "description": "Senior Graphic Designer with 8+ years of experience in brand identity, digital campaigns, visual systems, videography and motion."
+  },
+  "navigation": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Let's connect"
+  },
+  "cv": {
+    "label": "View CV",
+    "file": "/assets/Reza-Romadoni-CV.pdf"
+  },
+  "hero": {
+    "eyebrow": "INDEPENDENT MIND. DISTINCT VISUALS.",
+    "edition": "PORTFOLIO — 2026",
+    "line1": "A clear idea.",
+    "line2": "A distinct",
+    "accent": "look.",
+    "description": "I’m Reza Romadoni a Senior Graphic Designer with 8+ years of experience in brand identity, digital campaigns, and visual systems, delivering consistent visual solutions for startups, agencies, and corporate brands.",
+    "button": "Explore my work",
+    "photo": "/assets/reza-fly-1k.webp",
+    "photoAlt": "Reza Romadoni surrounded by his creative tools",
+    "footerLeft": "CAMPAIGN / SOCIAL MEDIA / VIDEOGRAPHY & MOTION",
+    "footerRight": "SCROLL TO DISCOVER"
+  },
+  "work": {
+    "eyebrow": "A SELECTION OF PROJECTS",
+    "line1": "Work that",
+    "accent": "speaks.",
+    "description": "Different brands.\nThe same attention to detail."
+  },
+  "about": {
+    "eyebrow": "A LITTLE ABOUT ME",
+    "line1": "Serious about design.",
+    "accent": "Curious about everything.",
+    "paragraphs": [
+      "I’m Reza, a Senior Graphic Designer with over 8 years of experience working with startups, agencies, and corporate brands.",
+      "My practice spans brand identity, digital campaigns, visual systems, and motion. I bring a thoughtful approach to every project, connecting a clear message with a distinct visual character."
+    ],
+    "photo": "/assets/reza-portrait-1k.webp",
+    "photoAlt": "Portrait of Reza Romadoni",
+    "photoCaption": "THE PERSON BEHIND THE PIXELS.",
+    "experienceLinkLabel": "A closer look at my experience"
+  },
+  "labels": {
+    "all": "All",
+    "more": "More projects",
+    "viewProject": "View project",
+    "close": "Close",
+    "openImage": "Open full-size image",
+    "tools": "Design tools",
+    "core": "Core skills",
+    "soft": "Soft skills",
+    "ai": "AI tools",
+    "languages": "Languages",
+    "backToTop": "Back to top",
+    "admin": "Admin"
+  },
+  "designTools": [
+    {
+      "name": "Adobe Photoshop",
+      "logo": "/assets/icons/photoshop.svg"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "logo": "/assets/icons/illustrator.svg"
+    },
+    {
+      "name": "Adobe InDesign",
+      "logo": "/assets/icons/indesign.svg"
+    },
+    {
+      "name": "Adobe After Effects",
+      "logo": "/assets/icons/after-effects.svg"
+    },
+    {
+      "name": "Adobe Premiere Pro",
+      "logo": "/assets/icons/premiere-pro.svg"
+    },
+    {
+      "name": "Figma",
+      "logo": "/assets/icons/figma.svg"
+    },
+    {
+      "name": "Canva",
+      "logo": "/assets/icons/canva.svg"
+    },
+    {
+      "name": "LottieFiles",
+      "logo": "/assets/icons/lottiefiles.svg"
+    }
+  ],
+  "coreSkills": [
+    "Visual Campaigns",
+    "Social Content",
+    "Digital Imaging",
+    "Video & Motion",
+    "Brand Identity Design",
+    "Design Systems",
+    "Visual Content",
+    "Strategy",
+    "Typography",
+    "Layout Design",
+    "Color Theory",
+    "Art Direction",
+    "Concept Development",
+    "Visual Storytelling",
+    "Motion Graphics",
+    "Print Production",
+    "Video Editing",
+    "Digital Campaigns",
+    "E-commerce Creative",
+    "In-app Visual Assets"
+  ],
+  "softSkills": [
+    "Team Leadership",
+    "Creative Planning",
+    "Mentoring Junior Designers",
+    "Project Management",
+    "Cross-functional Collaboration",
+    "Stakeholder Communication",
+    "Time Management"
+  ],
+  "aiIntro": "Part of my daily workflow, from concept exploration to production.",
+  "aiGroups": [
+    {
+      "title": "Concept visualisation & moodboarding",
+      "tags": [
+        "Midjourney",
+        "Nano Banana Pro"
+      ]
+    },
+    {
+      "title": "Generative asset production",
+      "tags": [
+        "Adobe Firefly"
+      ]
+    },
+    {
+      "title": "AI video & motion generation",
+      "tags": [
+        "Kling",
+        "RunwayML",
+        "Seedance"
+      ]
+    },
+    {
+      "title": "Brief development & copywriting support",
+      "tags": [
+        "ChatGPT",
+        "Claude"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bahasa Indonesia",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Professional"
+    }
+  ],
+  "contact": {
+    "eyebrow": "GOOD WORK STARTS WITH A CONVERSATION.",
+    "line1": "Let's",
+    "accent": "connect.",
+    "emailLabel": "Email",
+    "email": "rezaromadoni@gmail.com",
+    "whatsappLabel": "WhatsApp",
+    "whatsappDisplay": "0812-9472-2370",
+    "whatsappNumber": "6281294722370",
+    "socials": [
+      {
+        "icon": "instagram",
+        "label": "Instagram",
+        "handle": "@rezarmdy",
+        "url": "https://www.instagram.com/rezarmdy/"
+      },
+      {
+        "icon": "tiktok",
+        "label": "TikTok",
+        "handle": "@rezarmdy",
+        "url": "https://www.tiktok.com/@rezarmdy"
+      },
+      {
+        "icon": "linkedin",
+        "label": "LinkedIn",
+        "handle": "Reza Romadoni",
+        "url": "https://www.linkedin.com/in/rezaromadoni97/"
+      }
+    ],
+    "copyright": "© 2026 REZA ROMADONI"
+  }
+}

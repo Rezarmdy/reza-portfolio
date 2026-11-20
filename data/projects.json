@@ -1,0 +1,240 @@
+{
+  "projects": [
+    {
+      "title": "Sawit Nusantara Award 2026",
+      "role": "Campaign visuals across online, offline, and in-app media.",
+      "short": "A visual campaign celebrating SawitPRO customers, adapted across digital, offline, and in-app touchpoints.",
+      "gallery": [
+        {
+          "image": "/assets/hd/sawit-award-full.webp",
+          "alt": "Sawit Nusantara Award 2026"
+        },
+        {
+          "image": "/assets/hd/sawit-award-app.webp",
+          "alt": "Sawit Nusantara Award 2026"
+        }
+      ],
+      "cover": "/assets/hd/sawit-award-full.webp",
+      "featured": true,
+      "brand": "SawitPRO / Campaign design",
+      "category": "Campaign",
+      "published": true
+    },
+    {
+      "title": "SawitPRO In-App Communication",
+      "role": "In-app banner, pop-up, and icon design.",
+      "short": "In-app banners, pop-ups, and icons that bring SawitPRO’s products and promotions into focus.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-4-full.webp",
+          "alt": "SawitPRO In-App Communication"
+        }
+      ],
+      "cover": "/assets/hd/project-4-full.webp",
+      "featured": false,
+      "brand": "SawitPRO / In-app visual assets",
+      "category": "Campaign",
+      "published": true
+    },
+    {
+      "title": "SawitPRO Seasonal Campaigns",
+      "role": "Seasonal and commemorative social media design.",
+      "short": "Seasonal celebrations expressed through a consistent brand identity and a fresh visual approach for every occasion.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-5-full.webp",
+          "alt": "SawitPRO Seasonal Campaigns"
+        }
+      ],
+      "cover": "/assets/hd/project-5-full.webp",
+      "featured": false,
+      "brand": "SawitPRO / Social media design",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "SawitPRO Digital Ad Creatives",
+      "role": "Digital ad design for products and app features.",
+      "short": "Digital ad creatives introducing SawitPRO products and app features with a clear visual message.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-6-full.webp",
+          "alt": "SawitPRO Digital Ad Creatives"
+        }
+      ],
+      "cover": "/assets/hd/project-6-full.webp",
+      "featured": false,
+      "brand": "SawitPRO / Digital advertising",
+      "category": "Campaign",
+      "published": true
+    },
+    {
+      "title": "Toko Sawit Promotional Materials",
+      "role": "E-commerce and promotional collateral design.",
+      "short": "Promotional visuals highlighting products, prices, and offers for Toko Sawit.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-7-full.webp",
+          "alt": "Toko Sawit Promotional Materials"
+        }
+      ],
+      "cover": "/assets/hd/project-7-full.webp",
+      "featured": false,
+      "brand": "SawitPRO / E-commerce promotion",
+      "category": "Campaign",
+      "published": true
+    },
+    {
+      "title": "Mobile Legends: Bang Bang Indonesia",
+      "role": "Social media design for @realmobilelegendsid.",
+      "short": "Hero launches, in-game events, build guides, and community content for Mobile Legends Indonesia’s official account.",
+      "gallery": [
+        {
+          "image": "/assets/hd/mobile-legends-six-designs.webp",
+          "alt": "Mobile Legends: Bang Bang Indonesia — all six designs"
+        }
+      ],
+      "cover": "/assets/hd/mobile-legends-six-designs.webp",
+      "featured": true,
+      "brand": "Mobile Legends / Social media design",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "OBH Combi & OBH Combi Anak",
+      "role": "Social media visual design, via Dinamika Studio.",
+      "short": "Two product lines, two visual personalities. Social media design created through Dinamika Studio.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-9-full.webp",
+          "alt": "OBH Combi & OBH Combi Anak"
+        }
+      ],
+      "cover": "/assets/hd/project-9-full.webp",
+      "featured": false,
+      "brand": "Via Dinamika Studio / Social media design",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "Dinamika Studio Social Presence",
+      "role": "Internal social media design for Dinamika Creative Studio.",
+      "short": "An expressive mix of typography, illustration, and everyday creative culture for the studio’s own social channels.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-10-full.webp",
+          "alt": "Dinamika Studio Social Presence"
+        }
+      ],
+      "cover": "/assets/hd/project-10-full.webp",
+      "featured": false,
+      "brand": "Dinamika Studio / Internal brand content",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "Hula Tea Indonesia",
+      "role": "Social media design and digital imaging, via Dinamika Studio.",
+      "short": "Product-led social visuals and digital imaging that bring each flavour to life. Created through Dinamika Studio.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-11-full.webp",
+          "alt": "Hula Tea Indonesia"
+        }
+      ],
+      "cover": "/assets/hd/project-11-full.webp",
+      "featured": true,
+      "brand": "Via Dinamika Studio / Product social content",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "Tata Cakery",
+      "role": "Social media visual design, via Dinamika Studio.",
+      "short": "Soft compositions and product-focused storytelling for Tata Cakery’s social media. Created through Dinamika Studio.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-12-full.webp",
+          "alt": "Tata Cakery"
+        }
+      ],
+      "cover": "/assets/hd/project-12-full.webp",
+      "featured": false,
+      "brand": "Via Dinamika Studio / Product social content",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "The Body Shop Indonesia",
+      "role": "Videography and video editing, via Dinamika Studio.",
+      "short": "Videography and editing for The Body Shop Indonesia’s Instagram and YouTube content. Created through Dinamika Studio.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-13-full.webp",
+          "alt": "The Body Shop Indonesia"
+        },
+        {
+          "image": "/assets/hd/project-14-full.webp",
+          "alt": "The Body Shop Indonesia"
+        }
+      ],
+      "cover": "/assets/hd/project-13-full.webp",
+      "featured": true,
+      "brand": "Via Dinamika Studio / Videography & editing",
+      "category": "Videography & Motion",
+      "published": true
+    },
+    {
+      "title": "Ajaib People & Culture Content",
+      "role": "Social media visual design.",
+      "short": "A selection of Ajaib social visuals exploring learning, career growth, and workplace culture.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-15-full.webp",
+          "alt": "Ajaib People & Culture Content"
+        }
+      ],
+      "cover": "/assets/hd/project-15-full.webp",
+      "featured": false,
+      "brand": "Ajaib / Social media design",
+      "category": "Social Media",
+      "published": true
+    },
+    {
+      "title": "Ajaib Employee Collaterals",
+      "role": "Employee merchandise and onboarding collateral design.",
+      "short": "Employee merchandise and collaterals designed for Ajaib’s onboarding experience and internal events.",
+      "gallery": [
+        {
+          "image": "/assets/hd/project-16-full.webp",
+          "alt": "Ajaib Employee Collaterals"
+        }
+      ],
+      "cover": "/assets/hd/project-16-full.webp",
+      "featured": true,
+      "brand": "Ajaib / Merchandise & internal communication",
+      "category": "Campaign",
+      "published": true
+    },
+    {
+      "title": "PLN Indonesia Animated Short",
+      "role": "AI-assisted character development and animation production.",
+      "short": "An AI-assisted animated short about everyday electrical safety, from character development to the final video.",
+      "gallery": [
+        {
+          "image": "/assets/hd/pln-characters.webp",
+          "alt": "PLN Indonesia Animated Short"
+        },
+        {
+          "image": "/assets/hd/pln-scenes.webp",
+          "alt": "PLN Indonesia Animated Short"
+        }
+      ],
+      "cover": "/assets/hd/pln-characters.webp",
+      "featured": true,
+      "brand": "PLN Indonesia / AI-assisted animation",
+      "category": "Videography & Motion",
+      "published": true
+    }
+  ]
+}
